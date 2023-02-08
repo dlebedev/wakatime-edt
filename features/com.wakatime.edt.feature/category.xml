@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="com.wakatime.edt.feature">
+      <category name="com.wakatime"/>
+   </feature>
+   <category-def name="com.wakatime" label="WakaTime">
+      <description>
+         Fully automatic time tracking.
+      </description>
+   </category-def>
+</site>
