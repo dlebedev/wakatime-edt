@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-   Copyright (c) 2020,2021 1C-Soft LLC
-   This program and the accompanying materials are made available under
-   the terms of the Eclipse Public License 2.0 which is available at
-   https://www.eclipse.org/legal/epl-2.0/
-   SPDX-License-Identifier: EPL-2.0
-   Contributors:
-       1C-Soft LLC - initial API and implementation
--->
 <project
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -238,6 +229,20 @@
               <sources>
                 <source>${project.build.directory}/xcore-gen</source>
               </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-packaging-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <id>package-feature</id>
+            <configuration>
+              <finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
             </configuration>
           </execution>
         </executions>

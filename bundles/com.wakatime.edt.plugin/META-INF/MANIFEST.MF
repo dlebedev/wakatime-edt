@@ -5,8 +5,14 @@ Bundle-SymbolicName: com.wakatime.edt.plugin;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.wakatime.edt.plugin.WakaTime
 Bundle-Vendor: WAKATIME
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.ui
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.editors,
+ com._1c.g5.v8.dt.bsl.ui
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: com.wakatime.edt.plugin
 Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.ui.forms.editor,
+ org.eclipse.xtext.ui.editor

@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.wakatime.edt.plugin;
 
 import org.eclipse.core.runtime.Status;

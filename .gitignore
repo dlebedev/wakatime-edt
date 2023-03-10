@@ -1,13 +1,17 @@
-#Eclipse project files
+.DS_Store
+*.class
+*.war
+*.ear
+
 .metadata/
+.settings/
 .metricsapp/
 .metricsapp-tests/
 .JETEmitters/
-#Build targets
-bin/
-target/
-#Report directories
+
+*/bin/
+/.m2/
+*/target/
+
 /reports
 */reports
-#Mac-specific directory that no other operating system needs.
-.DS_Store
